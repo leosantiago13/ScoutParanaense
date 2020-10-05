@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Partidas\**" />
+    <EmbeddedResource Remove="Views\Partidas\**" />
+    <None Remove="Views\Partidas\**" />
+    <Page Remove="Views\Partidas\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Cartão de Visita Verde e Preto para Professor de Escolinha de Futebol.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Estatisticas\" />
+    <Folder Include="Views\Jogos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\Cartão de Visita Verde e Preto para Professor de Escolinha de Futebol.png" />
+  </ItemGroup>
+
+</Project>

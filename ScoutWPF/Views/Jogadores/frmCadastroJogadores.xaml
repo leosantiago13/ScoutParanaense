@@ -1,0 +1,17 @@
+﻿<Window x:Class="ScoutWPF.Views.Jogadores.frmCadastroJogadores"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScoutWPF.Views.Jogadores"
+        mc:Ignorable="d"
+        Title="Cadastro de Jogadores" Height="450" Width="800" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="btnCriar" Content="Criar" HorizontalAlignment="Left" Margin="82,85,0,0" VerticalAlignment="Top" Height="55" Width="120" FontSize="20"/>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="center" Margin="85" VerticalAlignment="Top" Height="55" Width="120" FontSize="20"/>
+        <Button x:Name="btnDeletar" Content="Deletar" VerticalAlignment="Top" Height="55" Width="120" FontSize="20" Margin="598,85,82,0"/>
+        <DataGrid x:Name="grdJogadores" Margin="60,155,60,15"/>
+        <Label x:Name="lblTitulo" Content="Jogadores" Margin="10" HorizontalAlignment="Center" FontSize="35" FontFamily="Arial Rounded MT Bold"/>
+
+    </Grid>
+</Window>

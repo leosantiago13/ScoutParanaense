@@ -1,0 +1,28 @@
+﻿<Window x:Class="ScoutWPF.Views.frmPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScoutWPF.Views"
+        mc:Ignorable="d"
+        Title="Scout Paranaense" Height="450" Width="800" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+    <Grid>
+        <Grid.BindingGroup>
+            <BindingGroup/>
+        </Grid.BindingGroup>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Views/Cartão de Visita Verde e Preto para Professor de Escolinha de Futebol.png"/>
+        </Grid.Background>
+        <Menu VerticalAlignment="Top" HorizontalAlignment="Left" Height="20" Width="800">
+            <MenuItem Header="_Arquivo">
+                <MenuItem x:Name="menuSair" Header="_Sair" Click="menuSair_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="menuCadJogador" Header="_Cadastros" Click="menuCadJogador_Click">
+                <MenuItem x:Name="menuJogador" Header="Jogador" Click="menuJogador_Click"/>
+                <MenuItem x:Name="menuTimes" Header="Times" Click="menuTimes_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Sobre" Click="MenuItem_Click"/>
+        </Menu>
+
+    </Grid>
+</Window>
